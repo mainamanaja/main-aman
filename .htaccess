@@ -1,0 +1,7 @@
+ErrorDocument 404 https://itsfunnyto.me/
+ErrorDocument 403 https://itsfunnyto.me/
+ErrorDocument 401 https://itsfunnyto.me/
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/$
+RewriteRule ^(.*)$ / [R=301,L]
